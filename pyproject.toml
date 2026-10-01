@@ -1,0 +1,19 @@
+[project]
+name = "lumina-compiler"
+version = "0.1.0"
+description = "Lumina 流明编程语言 - 自然语言驱动的系统级编程语言"
+authors = [{name = "hellociao1"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["compiler", "programming-language", "comptime", "natural-language"]
+
+[project.scripts]
+lumina = "lumina.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
